@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kost Putri Cat Friendly - Mochi Family</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: url('Images1.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .logo-floating {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: url('Images.png') no-repeat center center / cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+    .header-kuliah, .footer {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 15px 30px;
+      border-bottom: 2px solid #a18cd1;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+    }
+    nav {
+      background-color: rgba(238, 217, 255, 0.95);
+      padding: 15px;
+      text-align: center;
+    }
+    nav button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #b185db;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    nav button.active {
+      background-color: #6a4c93;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 30px auto;
+      max-width: 1000px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(161, 140, 209, 0.4);
+      position: relative;
+    }
+    .highlight, .info {
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background: #f8f9fa;
+    }
+    .img-medium {
+      max-width: 70%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .img-medium:hover {
+      transform: scale(1.05);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="logo-floating"></div>
+
+<div class="header-kuliah">
+  Website ini dibuat oleh Yuli Megawati 231110015 - TTE 3 Praktikum Pemrograman Web
+</div>
+
+<!-- Halaman 1 -->
+<div class="container fade-in" id="page1">
+  
+    <!-- Pengumuman Besar -->
+    <div class="p-4 mb-4 bg-primary text-white rounded shadow fade-in text-center">
+      <h2 class="fw-bold">🏡 Selamat Datang di Kost Putri Cat Friendly - Keluarga Mochi!</h2>
+      <p class="mt-3 lead">
+        Kami membuka kesempatan bagi kamu yang ingin tinggal di lingkungan ramah, nyaman, dan penuh kehangatan bersama para pecinta kucing lainnya.  
+        Fasilitas lengkap, suasana tenang, serta berbagai aktivitas komunitas siap menyambutmu!  
+        <br><br>
+        🐾 Kuota kamar TERBATAS. Yuk, jadi bagian dari keluarga besar Mochi sekarang!
+      </p>
+    </div>
+  
+    <!-- Carousel Gambar Cozy -->
+    <div class="fade-in mb-5">
+      <div id="carouselKamar" class="carousel slide mx-auto" style="max-width: 600px;" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="https://blog-static.mamikos.com/wp-content/uploads/2021/12/kasur-multifungsii-683x1024.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/e9/0b/3c/e90b3c04762fa34b75dccbe9961c0b44.jpg" class="d-block w-100 rounded" alt="Kamar 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/53/f4/7f/53f47f8b27006de28e7547db4d840eb6.jpg" class="d-block w-100 rounded" alt="Kamar 3">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/4c/f8/15/4cf81577b2dcf0f5ed142d589932dba6.jpg" class="d-block w-100 rounded" alt="Kamar 4">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i0.wp.com/i.pinimg.com/564x/e6/a6/0e/e6a60e6c199e85b7cc9f1293d8db6328.jpg?w=720&ssl=1" class="d-block w-100 rounded" alt="Kamar 5">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselKamar" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselKamar" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  <!-- Fasilitas dan Pilihan Tipe Kamar -->
+<div class="info mt-5 fade-in">
+    <h3 class="text-center mb-4 fw-bold">🏡 Temukan Kenyamananmu di Kost Mochi</h3>
+  
+    <div class="row g-4 align-items-start">
+      
+      <!-- Sebelah Kiri: Fasilitas Umum -->
+      <div class="col-lg-6 fade-in">
+        <h5 class="text-center mb-3 fw-bold">✨ Fasilitas Umum Kost</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            🍳 <strong>Dapur Bersama:</strong> Dilengkapi kompor, microwave, kulkas
+          </li>
+          <li class="list-group-item">
+            🧺 <strong>Ruang Laundry:</strong> Mesin cuci bersama, setrika, area jemur
+          </li>
+          <li class="list-group-item">
+            🚀 <strong>Wi-Fi Kencang:</strong> Internet stabil untuk kerja dan hiburan
+          </li>
+          <li class="list-group-item">
+            🏍️ <strong>Parkiran Motor:</strong> Area parkir aman di dalam kost
+          </li>
+          <li class="list-group-item">
+            🐾 <strong>Taman Bermain Kucing:</strong> Area indoor dan outdoor kucing
+          </li>
+          <li class="list-group-item">
+            🛋️ <strong>Ruang Bersantai:</strong> Sofa nyaman untuk kumpul dan ngobrol
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Sebelah Kanan: Switch Pilihan Kamar -->
+      <div class="col-lg-6 fade-in">
+        <h5 class="text-center mb-3 fw-bold">🛏️ Pilih Tipe Kamarmu</h5>
+  
+        <div class="d-flex justify-content-center mb-4">
+          <div class="btn-group" role="group" aria-label="Pilihan Tipe Kamar">
+            <input type="radio" class="btn-check" name="tipeKamar" id="standard" autocomplete="off" onclick="showKamar('standard')">
+            <label class="btn btn-outline-primary" for="standard">Standard</label>
+  
+            <input type="radio" class="btn-check" name="tipeKamar" id="deluxe" autocomplete="off" onclick="showKamar('deluxe')">
+            <label class="btn btn-outline-primary" for="deluxe">Deluxe</label>
+  
+            <input type="radio" class="btn-check" name="tipeKamar" id="premium" autocomplete="off" onclick="showKamar('premium')">
+            <label class="btn btn-outline-primary" for="premium">Premium</label>
+          </div>
+        </div>
+  
+        <!-- Box Deskripsi Kamar -->
+        <div id="deskripsiKamar" class="p-3 border rounded shadow fade-in" style="display:none;">
+          <h5 id="judulKamar" class="fw-bold"></h5>
+          <p id="detailKamar" class="small mb-2"></p>
+          <p id="hargaKamar" class="fw-bold text-primary"></p>
+          <p id="captionKamar" class="fst-italic text-muted"></p>
+         <!-- Tombol Daftar -->
+            <div class="text-center mt-4">
+            <button id="btnDaftar" class="btn btn-success fw-bold" onclick="isiFormDanScroll()">Daftar Sekarang</button>
+            </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+      <script>
+        // Fungsi tambahan untuk smooth scroll dan fade-in
+        function fadeInElement(el) {
+          el.style.opacity = 0;
+          el.style.display = 'block';
+          let opacity = 0;
+          const timer = setInterval(function() {
+            if (opacity >= 1) clearInterval(timer);
+            el.style.opacity = opacity;
+            opacity += 0.05;
+          }, 20);
+        }
+        
+        function showKamar(tipe) {
+          const judul = document.getElementById('judulKamar');
+          const detail = document.getElementById('detailKamar');
+          const harga = document.getElementById('hargaKamar');
+          const caption = document.getElementById('captionKamar');
+          const box = document.getElementById('deskripsiKamar');
+        
+          let dataKamar = {
+            standard: {
+              judul: "Standard Room",
+              detail: "• Kasur single bed\n• Meja belajar + kursi\n• Lemari pakaian\n• Jendela kecil untuk sirkulasi udara\n• Kamar mandi luar (sharing)",
+              harga: "Rp 1.200.000 / bulan",
+              caption: "Pilihan terbaik untuk mahasiswa aktif yang butuh kenyamanan basic dengan harga terjangkau."
+            },
+            deluxe: {
+              judul: "Deluxe Room",
+              detail: "• Kasur queen size\n• Meja kerja luas\n• AC split\n• Lemari besar\n• Jendela besar dengan cahaya alami\n• Kamar mandi luar (sharing)",
+              harga: "Rp 1.600.000 / bulan",
+              caption: "Untuk kamu yang ingin lebih lega dan nyaman, cocok untuk WFH dan belajar marathon."
+            },
+            premium: {
+              judul: "Premium Room",
+              detail: "• Semua fasilitas Deluxe Room\n• Kamar mandi dalam (shower + closet duduk)\n• Balkon pribadi\n• View taman belakang\n• Sofa kecil di dalam kamar",
+              harga: "Rp 2.100.000 / bulan",
+              caption: "Pilihan eksklusif untuk kamu yang menginginkan privasi, kemewahan, dan ketenangan maksimal."
+            }
+          };
+        
+          // Isi data
+          judul.innerText = dataKamar[tipe].judul;
+          detail.innerText = dataKamar[tipe].detail;
+          harga.innerText = dataKamar[tipe].harga;
+          caption.innerText = dataKamar[tipe].caption;
+        
+          // Animasi fade-in
+          fadeInElement(box);
+        
+          // Smooth scroll ke deskripsi kamar
+          box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        </script>
+        <script>
+            function isiFormDanScroll() {
+              // Ambil tipe kamar yang dipilih
+              let selected = document.querySelector('input[name="tipeKamar"]:checked');
+              if (selected) {
+                document.getElementById('pilihanKamar').value = selected.id.charAt(0).toUpperCase() + selected.id.slice(1); // Standard/Deluxe/Premium
+              }
+            
+              // Scroll ke form
+              const formElement = document.querySelector('form');
+              if (formElement) {
+                formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }
+            </script>
+            <!-- Formulir Pendaftaran Kost -->
+<div class="info mt-5 fade-in">
+    <h3 class="text-center mb-4 fw-bold">📝 Formulir Pendaftaran Kost</h3>
+  
+    <form class="p-3 border rounded shadow" onsubmit="kirimWA(); return false;">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Lengkap" required>
+          <label for="namaLengkap">Nama Lengkap</label>
+        </div>
+      
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="nomorHP" placeholder="Nomor HP" required>
+          <label for="nomorHP">Nomor HP / WhatsApp</label>
+        </div>
+      
+        <div class="form-floating mb-3">
+          <select class="form-select" id="pilihanKamar" required>
+            <option selected disabled>Pilih Kamar</option>
+            <option value="Standard">Standard</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Premium">Premium</option>
+          </select>
+          <label for="pilihanKamar">Pilihan Kamar</label>
+        </div>
+      
+        <div class="form-floating mb-3">
+          <textarea class="form-control" id="pesanTambahan" style="height: 100px" placeholder="Pesan tambahan..."></textarea>
+          <label for="pesanTambahan">Pesan Tambahan</label>
+        </div>
+      
+        <button type="submit" class="btn btn-primary w-100 fw-bold">Submit</button>
+      </form>
+      
+  </div>
+  
+  <script>
+    function kirimWA() {
+      const nama = document.getElementById('namaLengkap').value;
+      const hp = document.getElementById('nomorHP').value;
+      const kamar = document.getElementById('pilihanKamar').value;
+      const pesan = document.getElementById('pesanTambahan').value;
+    
+      const nomorTujuan = '6283104901677'; // Ganti dengan nomor WA tujuan kamu (pakai kode negara 62 untuk Indonesia)
+      const textWA = `Halo, saya ingin daftar Kost Mochi.%0A
+    Nama: ${nama}%0A
+    No HP: ${hp}%0A
+    Pilihan Kamar: ${kamar}%0A
+    Pesan Tambahan: ${pesan}`;
+    
+      const urlWA = `https://wa.me/${nomorTujuan}?text=${textWA}`;
+    
+      window.location.href = urlWA;
+    }
+    </script>
+</body>
+</html>
